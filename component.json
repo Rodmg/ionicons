@@ -1,19 +1,19 @@
 {
-    "repo": "driftyco/ionicons",
+    "repo": "driftyco/bbicons",
     "development": {},
-    "version": "2.0.1",
+    "version": "2.0.2",
     "styles": [
-        "css/ionicons.css"
+        "css/bbicons.css"
     ],
-    "name": "Ionicons",
+    "name": "BBicons",
     "dependencies": {},
     "keywords": [],
     "license": "MIT",
     "fonts": [
-        "fonts/ionicons.eot",
-        "fonts/ionicons.svg",
-        "fonts/ionicons.ttf",
-        "fonts/ionicons.woff"
+        "fonts/bbicons.eot",
+        "fonts/bbicons.svg",
+        "fonts/bbicons.ttf",
+        "fonts/bbicons.woff"
     ],
     "description": "The premium icon font for Ionic Framework."
 }

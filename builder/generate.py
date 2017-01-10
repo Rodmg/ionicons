@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from subprocess import call
 import os
 import json
@@ -33,18 +36,21 @@ def generate_font_files():
 
 def rename_svg_glyph_names(data):
   # hacky and slow (but safe) way to rename glyph-name attributes
-  svg_path = os.path.join(FONTS_FOLDER_PATH, 'ionicons.svg')
+  svg_path = os.path.join(FONTS_FOLDER_PATH, 'bbicons.svg')
   svg_file = open(svg_path, 'r+')
-  svg_text = svg_file.read()
+  svg_text = svg_file.read().decode("utf-8")
   svg_file.seek(0)
 
   for ionicon in data['icons']:
     # uniF2CA
     org_name = 'uni%s' % (ionicon['code'].replace('0x', '').upper())
     ion_name = 'ion-%s' % (ionicon['name'])
+    #print org_name
+    #print ion_name
+    #print svg_text
     svg_text = svg_text.replace(org_name, ion_name)
 
-  svg_file.write(svg_text)
+  svg_file.write(svg_text.encode("utf-8"))
   svg_file.close()
 
 
@@ -53,37 +59,37 @@ def generate_less(data):
   font_name = data['name']
   font_version = data['version']
   css_prefix = data['prefix']
-  variables_file_path = os.path.join(LESS_FOLDER_PATH, '_ionicons-variables.less')
-  icons_file_path = os.path.join(LESS_FOLDER_PATH, '_ionicons-icons.less')
+  variables_file_path = os.path.join(LESS_FOLDER_PATH, '_bbicons-variables.less')
+  icons_file_path = os.path.join(LESS_FOLDER_PATH, '_bbicons-icons.less')
 
   d = []
   d.append('/*!');
   d.append('Ionicons, v%s' % (font_version) );
-  d.append('Created by Ben Sperry for the Ionic Framework, http://ionicons.com/');
+  d.append('Created by Ben Sperry for the Ionic Framework, http://bbicons.com/');
   d.append('https://twitter.com/benjsperry  https://twitter.com/ionicframework');
-  d.append('MIT License: https://github.com/driftyco/ionicons');
+  d.append('MIT License: https://github.com/driftyco/bbicons');
   d.append('*/');
-  d.append('// Ionicons Variables')
+  d.append('// BBicons Variables')
   d.append('// --------------------------\n')
-  d.append('@ionicons-font-path: "../fonts";')
-  d.append('@ionicons-font-family: "%s";' % (font_name) )
-  d.append('@ionicons-version: "%s";' % (font_version) )
-  d.append('@ionicons-prefix: %s;' % (css_prefix) )
+  d.append('@bbicons-font-path: "../fonts";')
+  d.append('@bbicons-font-family: "%s";' % (font_name) )
+  d.append('@bbicons-version: "%s";' % (font_version) )
+  d.append('@bbicons-prefix: %s;' % (css_prefix) )
   d.append('')
   for ionicon in data['icons']:
-    chr_code = ionicon['code'].replace('0x', '\\')
-    d.append('@ionicon-var-%s: "%s";' % (ionicon['name'], chr_code) )
+    chr_code = ionicon['code'].replace('0x', '\\\\')
+    d.append('@bbicon-var-%s: "%s";' % (ionicon['name'], chr_code) )
   f = open(variables_file_path, 'w')
   f.write( '\n'.join(d) )
   f.close()
 
   d = []
-  d.append('// Ionicons Icons')
+  d.append('// BBicons Icons')
   d.append('// --------------------------\n')
 
   group = [ '.%s' % (data['name'].lower()) ]
   for ionicon in data['icons']:
-    group.append('.@{ionicons-prefix}%s:before' % (ionicon['name']) )
+    group.append('.@{bbicons-prefix}%s:before' % (ionicon['name']) )
 
   d.append( ',\n'.join(group) )
 
@@ -92,8 +98,8 @@ def generate_less(data):
   d.append('}')
 
   for ionicon in data['icons']:
-    chr_code = ionicon['code'].replace('0x', '\\')
-    d.append('.@{ionicons-prefix}%s:before { content: @ionicon-var-%s; }' % (ionicon['name'], ionicon['name']) )
+    chr_code = ionicon['code'].replace('0x', '\\\\')
+    d.append('.@{bbicons-prefix}%s:before { content: @bbicon-var-%s; }' % (ionicon['name'], ionicon['name']) )
 
   f = open(icons_file_path, 'w')
   f.write( '\n'.join(d) )
@@ -105,31 +111,31 @@ def generate_scss(data):
   font_name = data['name']
   font_version = data['version']
   css_prefix = data['prefix']
-  variables_file_path = os.path.join(SCSS_FOLDER_PATH, '_ionicons-variables.scss')
-  icons_file_path = os.path.join(SCSS_FOLDER_PATH, '_ionicons-icons.scss')
+  variables_file_path = os.path.join(SCSS_FOLDER_PATH, '_bbicons-variables.scss')
+  icons_file_path = os.path.join(SCSS_FOLDER_PATH, '_bbicons-icons.scss')
 
   d = []
   d.append('// Ionicons Variables')
   d.append('// --------------------------\n')
-  d.append('$ionicons-font-path: "../fonts" !default;')
-  d.append('$ionicons-font-family: "%s" !default;' % (font_name) )
-  d.append('$ionicons-version: "%s" !default;' % (font_version) )
-  d.append('$ionicons-prefix: %s !default;' % (css_prefix) )
+  d.append('$bbicons-font-path: "../fonts" !default;')
+  d.append('$bbicons-font-family: "%s" !default;' % (font_name) )
+  d.append('$bbicons-version: "%s" !default;' % (font_version) )
+  d.append('$bbicons-prefix: %s !default;' % (css_prefix) )
   d.append('')
   for ionicon in data['icons']:
-    chr_code = ionicon['code'].replace('0x', '\\')
-    d.append('$ionicon-var-%s: "%s";' % (ionicon['name'], chr_code) )
+    chr_code = ionicon['code'].replace('0x', '\\\\')
+    d.append('$bbicon-var-%s: "%s";' % (ionicon['name'], chr_code) )
   f = open(variables_file_path, 'w')
   f.write( '\n'.join(d) )
   f.close()
 
   d = []
-  d.append('// Ionicons Icons')
+  d.append('// BBicons Icons')
   d.append('// --------------------------\n')
 
   group = [ '.%s' % (data['name'].lower()) ]
   for ionicon in data['icons']:
-    group.append('.#{$ionicons-prefix}%s:before' % (ionicon['name']) )
+    group.append('.#{$bbicons-prefix}%s:before' % (ionicon['name']) )
 
   d.append( ',\n'.join(group) )
 
@@ -138,8 +144,8 @@ def generate_scss(data):
   d.append('}')
 
   for ionicon in data['icons']:
-    chr_code = ionicon['code'].replace('0x', '\\')
-    d.append('.#{$ionicons-prefix}%s:before { content: $ionicon-var-%s; }' % (ionicon['name'], ionicon['name']) )
+    chr_code = ionicon['code'].replace('0x', '\\\\')
+    d.append('.#{$bbicons-prefix}%s:before { content: $bbicon-var-%s; }' % (ionicon['name'], ionicon['name']) )
 
   f = open(icons_file_path, 'w')
   f.write( '\n'.join(d) )
@@ -151,9 +157,9 @@ def generate_scss(data):
 def generate_css_from_scss(data):
   print "Generate CSS From SCSS"
 
-  scss_file_path = os.path.join(SCSS_FOLDER_PATH, 'ionicons.scss')
-  css_file_path = os.path.join(CSS_FOLDER_PATH, 'ionicons.css')
-  css_min_file_path = os.path.join(CSS_FOLDER_PATH, 'ionicons.min.css')
+  scss_file_path = os.path.join(SCSS_FOLDER_PATH, 'bbicons.scss')
+  css_file_path = os.path.join(CSS_FOLDER_PATH, 'bbicons.css')
+  css_min_file_path = os.path.join(CSS_FOLDER_PATH, 'bbicons.min.css')
 
   cmd = "sass %s %s --style compact" % (scss_file_path, css_file_path)
   call(cmd, shell=True)
@@ -208,7 +214,7 @@ def generate_component_json(data):
   print "Generate component.json"
   d = {
     "name": data['name'],
-    "repo": "driftyco/ionicons",
+    "repo": "driftyco/bbicons",
     "description": "The premium icon font for Ionic Framework.",
     "version": data['version'],
     "keywords": [],
@@ -236,10 +242,10 @@ def generate_component_json(data):
 def generate_composer_json(data):
   print "Generate composer.json"
   d = {
-    "name": "driftyco/ionicons",
+    "name": "driftyco/bbicons",
     "description": "The premium icon font for Ionic Framework.",
     "keywords": [ "fonts", "icon font", "icons", "ionic", "web font"],
-    "homepage": "http://ionicons.com/",
+    "homepage": "http://bbicons.com/",
     "authors": [
       {
         "name": "Ben Sperry",
@@ -276,7 +282,7 @@ def generate_bower_json(data):
   d = {
     "name": data['name'],
     "version": data['version'],
-    "homepage": "https://github.com/driftyco/ionicons",
+    "homepage": "https://github.com/driftyco/bbicons",
     "authors": [
       "Ben Sperry <ben@drifty.com>",
       "Adam Bradley <adam@drifty.com>",

@@ -1,0 +1,27 @@
+// bbicons Font Path
+// --------------------------
+
+@font-face {
+ font-family: $bbicons-font-family;
+ src:url("../assets/fonts/bbicons.eot?v=#{$bbicons-version}");
+ src:url("../assets/fonts/bbicons.eot?v=#{$bbicons-version}#iefix") format("embedded-opentype"),
+  url("../assets/fonts/bbicons.ttf?v=#{$bbicons-version}") format("truetype"),
+  url("../assets/fonts/bbicons.woff?v=#{$bbicons-version}") format("woff"),
+  url("../assets/fonts/bbicons.svg?v=#{$bbicons-version}#bbicons") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.ion {
+  display: inline-block;
+  font-family: $bbicons-font-family;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

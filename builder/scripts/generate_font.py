@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Font generation script from FontCustom
 # https://github.com/FontCustom/fontcustom/
 # http://fontcustom.com/
@@ -118,7 +120,7 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
     if AUTO_WIDTH:
       f.autoWidth(0, 0, 512)
 
-  fontfile = '%s/ionicons' % (OUTPUT_FONT_DIR)
+  fontfile = '%s/bbicons' % (OUTPUT_FONT_DIR)
 
 build_hash = m.hexdigest()
 

@@ -1,5 +1,5 @@
 {
-    "name": "driftyco/ionicons",
+    "name": "driftyco/bbicons",
     "license": [
         "MIT"
     ],
@@ -31,6 +31,6 @@
         "ionic",
         "web font"
     ],
-    "homepage": "http://ionicons.com/",
+    "homepage": "http://bbicons.com/",
     "description": "The premium icon font for Ionic Framework."
 }

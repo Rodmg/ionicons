@@ -58,3 +58,34 @@ This repo already comes with all the files built and ready to go, but can also b
 ## License
 
 Ionicons is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Agregados 28/11/2016
+
+star
+touch
+history
+flag
+calendar
+alarm
+alarm-on
+clock
+
+## Agregados 10/01/2017
+
+airplay
+aspect-ratio
+dashboard
+eject
+favorite
+games
+input-antenna
+input-composite
+input-hdmi
+input-power
+input-svideo
+input
+language
+list
+movie
+overscan
+reply
