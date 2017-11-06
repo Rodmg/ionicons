@@ -10,16 +10,25 @@
 .#{$bbicons-prefix}aspect-ratio:before,
 .#{$bbicons-prefix}audio:before,
 .#{$bbicons-prefix}back:before,
+.#{$bbicons-prefix}bar:before,
 .#{$bbicons-prefix}blastbot:before,
 .#{$bbicons-prefix}blastbot-outline:before,
+.#{$bbicons-prefix}building:before,
 .#{$bbicons-prefix}calendar:before,
+.#{$bbicons-prefix}camera:before,
 .#{$bbicons-prefix}cancel:before,
 .#{$bbicons-prefix}cancel-circle:before,
 .#{$bbicons-prefix}cc:before,
 .#{$bbicons-prefix}chan-down:before,
 .#{$bbicons-prefix}chan-up:before,
+.#{$bbicons-prefix}city:before,
 .#{$bbicons-prefix}clock:before,
+.#{$bbicons-prefix}cloud:before,
+.#{$bbicons-prefix}cloudy-night:before,
+.#{$bbicons-prefix}coffee:before,
+.#{$bbicons-prefix}color:before,
 .#{$bbicons-prefix}dashboard:before,
+.#{$bbicons-prefix}dinner:before,
 .#{$bbicons-prefix}disc:before,
 .#{$bbicons-prefix}disconnected:before,
 .#{$bbicons-prefix}down:before,
@@ -27,17 +36,22 @@
 .#{$bbicons-prefix}dvr-letters:before,
 .#{$bbicons-prefix}eject:before,
 .#{$bbicons-prefix}enter:before,
+.#{$bbicons-prefix}extension:before,
 .#{$bbicons-prefix}fan:before,
 .#{$bbicons-prefix}favorite:before,
 .#{$bbicons-prefix}ff:before,
+.#{$bbicons-prefix}film:before,
+.#{$bbicons-prefix}fitness:before,
 .#{$bbicons-prefix}flag:before,
 .#{$bbicons-prefix}forward-10:before,
 .#{$bbicons-prefix}forward-30:before,
 .#{$bbicons-prefix}forward-5:before,
 .#{$bbicons-prefix}fridge:before,
 .#{$bbicons-prefix}games:before,
+.#{$bbicons-prefix}garden:before,
 .#{$bbicons-prefix}history:before,
 .#{$bbicons-prefix}home:before,
+.#{$bbicons-prefix}hottub:before,
 .#{$bbicons-prefix}info:before,
 .#{$bbicons-prefix}input:before,
 .#{$bbicons-prefix}input-antenna:before,
@@ -45,46 +59,77 @@
 .#{$bbicons-prefix}input-hdmi:before,
 .#{$bbicons-prefix}input-power:before,
 .#{$bbicons-prefix}input-svideo:before,
+.#{$bbicons-prefix}key:before,
 .#{$bbicons-prefix}language:before,
+.#{$bbicons-prefix}laundry:before,
 .#{$bbicons-prefix}left:before,
+.#{$bbicons-prefix}library:before,
 .#{$bbicons-prefix}light-off:before,
 .#{$bbicons-prefix}light-on:before,
 .#{$bbicons-prefix}list:before,
+.#{$bbicons-prefix}location:before,
+.#{$bbicons-prefix}lock-closed:before,
+.#{$bbicons-prefix}lock-open:before,
 .#{$bbicons-prefix}media-box:before,
 .#{$bbicons-prefix}menu:before,
+.#{$bbicons-prefix}moon:before,
 .#{$bbicons-prefix}movie:before,
 .#{$bbicons-prefix}music:before,
 .#{$bbicons-prefix}mute:before,
 .#{$bbicons-prefix}next:before,
 .#{$bbicons-prefix}off:before,
 .#{$bbicons-prefix}on:before,
+.#{$bbicons-prefix}outlet:before,
 .#{$bbicons-prefix}overscan:before,
+.#{$bbicons-prefix}partlysunny:before,
 .#{$bbicons-prefix}pause:before,
+.#{$bbicons-prefix}pets:before,
+.#{$bbicons-prefix}plane:before,
 .#{$bbicons-prefix}play:before,
 .#{$bbicons-prefix}play-pause:before,
 .#{$bbicons-prefix}plug:before,
 .#{$bbicons-prefix}prev:before,
 .#{$bbicons-prefix}projector:before,
+.#{$bbicons-prefix}radio:before,
+.#{$bbicons-prefix}rainy:before,
 .#{$bbicons-prefix}rec:before,
 .#{$bbicons-prefix}remote:before,
 .#{$bbicons-prefix}repeat:before,
 .#{$bbicons-prefix}replay:before,
 .#{$bbicons-prefix}reply:before,
 .#{$bbicons-prefix}right:before,
+.#{$bbicons-prefix}router:before,
 .#{$bbicons-prefix}rw:before,
+.#{$bbicons-prefix}school:before,
+.#{$bbicons-prefix}seat:before,
+.#{$bbicons-prefix}sleep:before,
+.#{$bbicons-prefix}sofa:before,
 .#{$bbicons-prefix}speaker:before,
+.#{$bbicons-prefix}speedometer:before,
 .#{$bbicons-prefix}star:before,
 .#{$bbicons-prefix}stereo:before,
 .#{$bbicons-prefix}stop:before,
+.#{$bbicons-prefix}store:before,
+.#{$bbicons-prefix}sun:before,
+.#{$bbicons-prefix}thermometer:before,
+.#{$bbicons-prefix}thumb-down:before,
+.#{$bbicons-prefix}thumb-up:before,
+.#{$bbicons-prefix}thunderstorm:before,
 .#{$bbicons-prefix}timer:before,
+.#{$bbicons-prefix}today:before,
 .#{$bbicons-prefix}toggle:before,
 .#{$bbicons-prefix}touch:before,
 .#{$bbicons-prefix}tv:before,
+.#{$bbicons-prefix}umbrella:before,
 .#{$bbicons-prefix}up:before,
 .#{$bbicons-prefix}vcr:before,
+.#{$bbicons-prefix}videocam:before,
 .#{$bbicons-prefix}videogame:before,
 .#{$bbicons-prefix}vol-down:before,
-.#{$bbicons-prefix}vol-up:before
+.#{$bbicons-prefix}vol-up:before,
+.#{$bbicons-prefix}warning:before,
+.#{$bbicons-prefix}wc:before,
+.#{$bbicons-prefix}work:before
 {
   @extend .ion;
 }
@@ -96,16 +141,25 @@
 .#{$bbicons-prefix}aspect-ratio:before { content: $bbicon-var-aspect-ratio; }
 .#{$bbicons-prefix}audio:before { content: $bbicon-var-audio; }
 .#{$bbicons-prefix}back:before { content: $bbicon-var-back; }
+.#{$bbicons-prefix}bar:before { content: $bbicon-var-bar; }
 .#{$bbicons-prefix}blastbot:before { content: $bbicon-var-blastbot; }
 .#{$bbicons-prefix}blastbot-outline:before { content: $bbicon-var-blastbot-outline; }
+.#{$bbicons-prefix}building:before { content: $bbicon-var-building; }
 .#{$bbicons-prefix}calendar:before { content: $bbicon-var-calendar; }
+.#{$bbicons-prefix}camera:before { content: $bbicon-var-camera; }
 .#{$bbicons-prefix}cancel:before { content: $bbicon-var-cancel; }
 .#{$bbicons-prefix}cancel-circle:before { content: $bbicon-var-cancel-circle; }
 .#{$bbicons-prefix}cc:before { content: $bbicon-var-cc; }
 .#{$bbicons-prefix}chan-down:before { content: $bbicon-var-chan-down; }
 .#{$bbicons-prefix}chan-up:before { content: $bbicon-var-chan-up; }
+.#{$bbicons-prefix}city:before { content: $bbicon-var-city; }
 .#{$bbicons-prefix}clock:before { content: $bbicon-var-clock; }
+.#{$bbicons-prefix}cloud:before { content: $bbicon-var-cloud; }
+.#{$bbicons-prefix}cloudy-night:before { content: $bbicon-var-cloudy-night; }
+.#{$bbicons-prefix}coffee:before { content: $bbicon-var-coffee; }
+.#{$bbicons-prefix}color:before { content: $bbicon-var-color; }
 .#{$bbicons-prefix}dashboard:before { content: $bbicon-var-dashboard; }
+.#{$bbicons-prefix}dinner:before { content: $bbicon-var-dinner; }
 .#{$bbicons-prefix}disc:before { content: $bbicon-var-disc; }
 .#{$bbicons-prefix}disconnected:before { content: $bbicon-var-disconnected; }
 .#{$bbicons-prefix}down:before { content: $bbicon-var-down; }
@@ -113,17 +167,22 @@
 .#{$bbicons-prefix}dvr-letters:before { content: $bbicon-var-dvr-letters; }
 .#{$bbicons-prefix}eject:before { content: $bbicon-var-eject; }
 .#{$bbicons-prefix}enter:before { content: $bbicon-var-enter; }
+.#{$bbicons-prefix}extension:before { content: $bbicon-var-extension; }
 .#{$bbicons-prefix}fan:before { content: $bbicon-var-fan; }
 .#{$bbicons-prefix}favorite:before { content: $bbicon-var-favorite; }
 .#{$bbicons-prefix}ff:before { content: $bbicon-var-ff; }
+.#{$bbicons-prefix}film:before { content: $bbicon-var-film; }
+.#{$bbicons-prefix}fitness:before { content: $bbicon-var-fitness; }
 .#{$bbicons-prefix}flag:before { content: $bbicon-var-flag; }
 .#{$bbicons-prefix}forward-10:before { content: $bbicon-var-forward-10; }
 .#{$bbicons-prefix}forward-30:before { content: $bbicon-var-forward-30; }
 .#{$bbicons-prefix}forward-5:before { content: $bbicon-var-forward-5; }
 .#{$bbicons-prefix}fridge:before { content: $bbicon-var-fridge; }
 .#{$bbicons-prefix}games:before { content: $bbicon-var-games; }
+.#{$bbicons-prefix}garden:before { content: $bbicon-var-garden; }
 .#{$bbicons-prefix}history:before { content: $bbicon-var-history; }
 .#{$bbicons-prefix}home:before { content: $bbicon-var-home; }
+.#{$bbicons-prefix}hottub:before { content: $bbicon-var-hottub; }
 .#{$bbicons-prefix}info:before { content: $bbicon-var-info; }
 .#{$bbicons-prefix}input:before { content: $bbicon-var-input; }
 .#{$bbicons-prefix}input-antenna:before { content: $bbicon-var-input-antenna; }
@@ -131,43 +190,74 @@
 .#{$bbicons-prefix}input-hdmi:before { content: $bbicon-var-input-hdmi; }
 .#{$bbicons-prefix}input-power:before { content: $bbicon-var-input-power; }
 .#{$bbicons-prefix}input-svideo:before { content: $bbicon-var-input-svideo; }
+.#{$bbicons-prefix}key:before { content: $bbicon-var-key; }
 .#{$bbicons-prefix}language:before { content: $bbicon-var-language; }
+.#{$bbicons-prefix}laundry:before { content: $bbicon-var-laundry; }
 .#{$bbicons-prefix}left:before { content: $bbicon-var-left; }
+.#{$bbicons-prefix}library:before { content: $bbicon-var-library; }
 .#{$bbicons-prefix}light-off:before { content: $bbicon-var-light-off; }
 .#{$bbicons-prefix}light-on:before { content: $bbicon-var-light-on; }
 .#{$bbicons-prefix}list:before { content: $bbicon-var-list; }
+.#{$bbicons-prefix}location:before { content: $bbicon-var-location; }
+.#{$bbicons-prefix}lock-closed:before { content: $bbicon-var-lock-closed; }
+.#{$bbicons-prefix}lock-open:before { content: $bbicon-var-lock-open; }
 .#{$bbicons-prefix}media-box:before { content: $bbicon-var-media-box; }
 .#{$bbicons-prefix}menu:before { content: $bbicon-var-menu; }
+.#{$bbicons-prefix}moon:before { content: $bbicon-var-moon; }
 .#{$bbicons-prefix}movie:before { content: $bbicon-var-movie; }
 .#{$bbicons-prefix}music:before { content: $bbicon-var-music; }
 .#{$bbicons-prefix}mute:before { content: $bbicon-var-mute; }
 .#{$bbicons-prefix}next:before { content: $bbicon-var-next; }
 .#{$bbicons-prefix}off:before { content: $bbicon-var-off; }
 .#{$bbicons-prefix}on:before { content: $bbicon-var-on; }
+.#{$bbicons-prefix}outlet:before { content: $bbicon-var-outlet; }
 .#{$bbicons-prefix}overscan:before { content: $bbicon-var-overscan; }
+.#{$bbicons-prefix}partlysunny:before { content: $bbicon-var-partlysunny; }
 .#{$bbicons-prefix}pause:before { content: $bbicon-var-pause; }
+.#{$bbicons-prefix}pets:before { content: $bbicon-var-pets; }
+.#{$bbicons-prefix}plane:before { content: $bbicon-var-plane; }
 .#{$bbicons-prefix}play:before { content: $bbicon-var-play; }
 .#{$bbicons-prefix}play-pause:before { content: $bbicon-var-play-pause; }
 .#{$bbicons-prefix}plug:before { content: $bbicon-var-plug; }
 .#{$bbicons-prefix}prev:before { content: $bbicon-var-prev; }
 .#{$bbicons-prefix}projector:before { content: $bbicon-var-projector; }
+.#{$bbicons-prefix}radio:before { content: $bbicon-var-radio; }
+.#{$bbicons-prefix}rainy:before { content: $bbicon-var-rainy; }
 .#{$bbicons-prefix}rec:before { content: $bbicon-var-rec; }
 .#{$bbicons-prefix}remote:before { content: $bbicon-var-remote; }
 .#{$bbicons-prefix}repeat:before { content: $bbicon-var-repeat; }
 .#{$bbicons-prefix}replay:before { content: $bbicon-var-replay; }
 .#{$bbicons-prefix}reply:before { content: $bbicon-var-reply; }
 .#{$bbicons-prefix}right:before { content: $bbicon-var-right; }
+.#{$bbicons-prefix}router:before { content: $bbicon-var-router; }
 .#{$bbicons-prefix}rw:before { content: $bbicon-var-rw; }
+.#{$bbicons-prefix}school:before { content: $bbicon-var-school; }
+.#{$bbicons-prefix}seat:before { content: $bbicon-var-seat; }
+.#{$bbicons-prefix}sleep:before { content: $bbicon-var-sleep; }
+.#{$bbicons-prefix}sofa:before { content: $bbicon-var-sofa; }
 .#{$bbicons-prefix}speaker:before { content: $bbicon-var-speaker; }
+.#{$bbicons-prefix}speedometer:before { content: $bbicon-var-speedometer; }
 .#{$bbicons-prefix}star:before { content: $bbicon-var-star; }
 .#{$bbicons-prefix}stereo:before { content: $bbicon-var-stereo; }
 .#{$bbicons-prefix}stop:before { content: $bbicon-var-stop; }
+.#{$bbicons-prefix}store:before { content: $bbicon-var-store; }
+.#{$bbicons-prefix}sun:before { content: $bbicon-var-sun; }
+.#{$bbicons-prefix}thermometer:before { content: $bbicon-var-thermometer; }
+.#{$bbicons-prefix}thumb-down:before { content: $bbicon-var-thumb-down; }
+.#{$bbicons-prefix}thumb-up:before { content: $bbicon-var-thumb-up; }
+.#{$bbicons-prefix}thunderstorm:before { content: $bbicon-var-thunderstorm; }
 .#{$bbicons-prefix}timer:before { content: $bbicon-var-timer; }
+.#{$bbicons-prefix}today:before { content: $bbicon-var-today; }
 .#{$bbicons-prefix}toggle:before { content: $bbicon-var-toggle; }
 .#{$bbicons-prefix}touch:before { content: $bbicon-var-touch; }
 .#{$bbicons-prefix}tv:before { content: $bbicon-var-tv; }
+.#{$bbicons-prefix}umbrella:before { content: $bbicon-var-umbrella; }
 .#{$bbicons-prefix}up:before { content: $bbicon-var-up; }
 .#{$bbicons-prefix}vcr:before { content: $bbicon-var-vcr; }
+.#{$bbicons-prefix}videocam:before { content: $bbicon-var-videocam; }
 .#{$bbicons-prefix}videogame:before { content: $bbicon-var-videogame; }
 .#{$bbicons-prefix}vol-down:before { content: $bbicon-var-vol-down; }
 .#{$bbicons-prefix}vol-up:before { content: $bbicon-var-vol-up; }
+.#{$bbicons-prefix}warning:before { content: $bbicon-var-warning; }
+.#{$bbicons-prefix}wc:before { content: $bbicon-var-wc; }
+.#{$bbicons-prefix}work:before { content: $bbicon-var-work; }

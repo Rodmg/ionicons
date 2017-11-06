@@ -1,5 +1,5 @@
 {
-  "build_hash": "b59194dd95fbacedab8941b831a12645",
+  "build_hash": "40bb9dde8fff5d6f0aaab2a379b76f2c",
   "prefix": "bb-",
   "version": "2.0.2",
   "name": "BBicons",
@@ -37,6 +37,10 @@
       "name": "back"
     },
     {
+      "code": "0xf153",
+      "name": "bar"
+    },
+    {
       "code": "0xf107",
       "name": "blastbot"
     },
@@ -45,8 +49,16 @@
       "name": "blastbot-outline"
     },
     {
+      "code": "0xf154",
+      "name": "building"
+    },
+    {
       "code": "0xf108",
       "name": "calendar"
+    },
+    {
+      "code": "0xf155",
+      "name": "camera"
     },
     {
       "code": "0xf10a",
@@ -69,12 +81,36 @@
       "name": "chan-up"
     },
     {
+      "code": "0xf156",
+      "name": "city"
+    },
+    {
       "code": "0xf10e",
       "name": "clock"
     },
     {
+      "code": "0xf157",
+      "name": "cloud"
+    },
+    {
+      "code": "0xf158",
+      "name": "cloudy-night"
+    },
+    {
+      "code": "0xf159",
+      "name": "coffee"
+    },
+    {
+      "code": "0xf15a",
+      "name": "color"
+    },
+    {
       "code": "0xf144",
       "name": "dashboard"
+    },
+    {
+      "code": "0xf15b",
+      "name": "dinner"
     },
     {
       "code": "0xf10f",
@@ -105,6 +141,10 @@
       "name": "enter"
     },
     {
+      "code": "0xf15c",
+      "name": "extension"
+    },
+    {
       "code": "0xf115",
       "name": "fan"
     },
@@ -115,6 +155,14 @@
     {
       "code": "0xf116",
       "name": "ff"
+    },
+    {
+      "code": "0xf15d",
+      "name": "film"
+    },
+    {
+      "code": "0xf15e",
+      "name": "fitness"
     },
     {
       "code": "0xf117",
@@ -141,12 +189,20 @@
       "name": "games"
     },
     {
+      "code": "0xf15f",
+      "name": "garden"
+    },
+    {
       "code": "0xf11c",
       "name": "history"
     },
     {
       "code": "0xf11d",
       "name": "home"
+    },
+    {
+      "code": "0xf160",
+      "name": "hottub"
     },
     {
       "code": "0xf11e",
@@ -177,12 +233,24 @@
       "name": "input-svideo"
     },
     {
+      "code": "0xf161",
+      "name": "key"
+    },
+    {
       "code": "0xf14e",
       "name": "language"
     },
     {
+      "code": "0xf162",
+      "name": "laundry"
+    },
+    {
       "code": "0xf11f",
       "name": "left"
+    },
+    {
+      "code": "0xf163",
+      "name": "library"
     },
     {
       "code": "0xf120",
@@ -197,12 +265,28 @@
       "name": "list"
     },
     {
+      "code": "0xf164",
+      "name": "location"
+    },
+    {
+      "code": "0xf165",
+      "name": "lock-closed"
+    },
+    {
+      "code": "0xf166",
+      "name": "lock-open"
+    },
+    {
       "code": "0xf122",
       "name": "media-box"
     },
     {
       "code": "0xf123",
       "name": "menu"
+    },
+    {
+      "code": "0xf168",
+      "name": "moon"
     },
     {
       "code": "0xf150",
@@ -229,12 +313,28 @@
       "name": "on"
     },
     {
+      "code": "0xf169",
+      "name": "outlet"
+    },
+    {
       "code": "0xf151",
       "name": "overscan"
     },
     {
+      "code": "0xf16a",
+      "name": "partlysunny"
+    },
+    {
       "code": "0xf129",
       "name": "pause"
+    },
+    {
+      "code": "0xf16b",
+      "name": "pets"
+    },
+    {
+      "code": "0xf16c",
+      "name": "plane"
     },
     {
       "code": "0xf12b",
@@ -255,6 +355,14 @@
     {
       "code": "0xf12e",
       "name": "projector"
+    },
+    {
+      "code": "0xf16d",
+      "name": "radio"
+    },
+    {
+      "code": "0xf16e",
+      "name": "rainy"
     },
     {
       "code": "0xf12f",
@@ -281,12 +389,36 @@
       "name": "right"
     },
     {
+      "code": "0xf16f",
+      "name": "router"
+    },
+    {
       "code": "0xf134",
       "name": "rw"
     },
     {
+      "code": "0xf170",
+      "name": "school"
+    },
+    {
+      "code": "0xf171",
+      "name": "seat"
+    },
+    {
+      "code": "0xf172",
+      "name": "sleep"
+    },
+    {
+      "code": "0xf173",
+      "name": "sofa"
+    },
+    {
       "code": "0xf135",
       "name": "speaker"
+    },
+    {
+      "code": "0xf174",
+      "name": "speedometer"
     },
     {
       "code": "0xf136",
@@ -301,8 +433,36 @@
       "name": "stop"
     },
     {
+      "code": "0xf175",
+      "name": "store"
+    },
+    {
+      "code": "0xf176",
+      "name": "sun"
+    },
+    {
+      "code": "0xf177",
+      "name": "thermometer"
+    },
+    {
+      "code": "0xf178",
+      "name": "thumb-down"
+    },
+    {
+      "code": "0xf179",
+      "name": "thumb-up"
+    },
+    {
+      "code": "0xf17a",
+      "name": "thunderstorm"
+    },
+    {
       "code": "0xf139",
       "name": "timer"
+    },
+    {
+      "code": "0xf17b",
+      "name": "today"
     },
     {
       "code": "0xf13a",
@@ -317,12 +477,20 @@
       "name": "tv"
     },
     {
+      "code": "0xf17c",
+      "name": "umbrella"
+    },
+    {
       "code": "0xf13d",
       "name": "up"
     },
     {
       "code": "0xf13e",
       "name": "vcr"
+    },
+    {
+      "code": "0xf17e",
+      "name": "videocam"
     },
     {
       "code": "0xf13f",
@@ -335,6 +503,18 @@
     {
       "code": "0xf141",
       "name": "vol-up"
+    },
+    {
+      "code": "0xf17f",
+      "name": "warning"
+    },
+    {
+      "code": "0xf180",
+      "name": "wc"
+    },
+    {
+      "code": "0xf181",
+      "name": "work"
     }
   ]
 }
